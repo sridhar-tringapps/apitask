@@ -40,8 +40,8 @@ class Api::V1::TablesController < ApplicationController
 
   def destroy
     @table = Table.find(params[:id])
-    if @user
-      @user.destroy
+    if @table
+      @table.destroy
       render json: { message: 'Table deleted sucessfully'},status: 200
     else
       render json: { error: 'Unable to delete'},status: 400
