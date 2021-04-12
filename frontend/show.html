@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AJAX</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="assets/js/show.js"></script> 
+  <link rel="stylesheet" href="assets/css/show.css">
+  
+</head>
+<body>
+  <div class="container main">
+    <h3>Data</h3>
+    <div id="showtable"></div>
+    <div class="form">
+      <h3 class="head">Edit data</h3>
+      <form>
+        <div class="form-group">
+          <label for="id">Id:</label>
+          <input type="text" class="form-control" id="id"  name="id" disabled>
+        </div>
+        <div class="form-group">
+          <label for="name" class="small">Name</label>
+          <input type="text" class="form-control" id="name" name="name" >
+        </div>
+        <div class="form-group">
+            <label for="email" class="small">Email</label>
+            <input type="email" class="form-control" id="email" name="email" >
+        </div>
+        <div class="form-group">
+          <label for="phone" class="small">Phone</label>
+          <input type="text" class="form-control" id="phone" name="phone" >
+        </div>
+      </form>
+
+      <span class="savebtn"></span>
+      <span class="cancelbtn" id="cancel"></span>
+    </div> 
+  </div>
+  
+</body>
+</html>
