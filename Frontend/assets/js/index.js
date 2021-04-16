@@ -15,7 +15,7 @@ $("#submit").on("click",function(){
       tkn=sessionStorage.getItem('uniquetoken'),
       console.log("tkn",tkn)
       $.ajax({
-        url: "http://localhost:3000/api/v1/tables",
+        url: "https://lit-hamlet-80953.herokuapp.com/api/v1/tables",
         headers: {
           "Content-Type": "application/json",
           "Accept": "application/json",
@@ -36,7 +36,7 @@ $("#submit").on("click",function(){
     $.ajax({
       type:"POST",
       datatype: 'JSON',
-      url: "http://localhost:3000/authenticate",
+      url: "https://lit-hamlet-80953.herokuapp.com/authenticate",
       data:user,
       success: function(temp){
         console.log(temp.auth_token);

@@ -30,7 +30,7 @@ $(window).on("load", function()
     $.ajax ({
       type: "GET",
       datatype: 'JSON',
-      url: "http://localhost:3000/api/v1/tables/"+tkn2,
+      url: "https://lit-hamlet-80953.herokuapp.com/api/v1/tables/"+tkn2,
       headers: {
         "Content-Type": "application/json",
         "Accept": "application/json",
@@ -61,7 +61,7 @@ function edit(id)
   $.ajax({
     type:"GET",
     datatype: 'JSON',
-    url: "http://localhost:3000/api/v1/tables/"+tkn2,
+    url: "https://lit-hamlet-80953.herokuapp.com/api/v1/tables/"+tkn2,
     headers: {
       "Content-Type": "application/json",
       "Accept": "application/json",
@@ -114,7 +114,7 @@ function save(id)
   $.ajax({
     type:"PUT",
     datatype: 'JSON',
-    url: "http://localhost:3000/api/v1/tables/"+tkn2,
+    url: "https://lit-hamlet-80953.herokuapp.com/api/v1/tables/"+tkn2,
     headers: {
       "Accept": "application/json",
       "Authorization": "Bearer "+tkn

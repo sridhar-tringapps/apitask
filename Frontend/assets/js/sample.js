@@ -25,7 +25,7 @@ $(window).on("load",function() {
   $.ajax({
     type:'GET',
     datatype:'JSON',
-    url: "http://localhost:3000/api/v1/tables",
+    url: "https://lit-hamlet-80953.herokuapp.com/api/v1/tables",
     headers: {
       "Content-Type": "application/json",
       "Accept": "application/json",
@@ -58,7 +58,7 @@ function destroy(id)
   $.ajax ({
     type: "DELETE",
     datatype: 'JSON',
-    url: "http://localhost:3000/api/v1/tables/"+$(this).attr("user_id"),
+    url: "https://lit-hamlet-80953.herokuapp.com/api/v1/tables/"+$(this).attr("user_id"),
     headers: {
       "Content-Type": "application/json",
       "Accept": "application/json",
